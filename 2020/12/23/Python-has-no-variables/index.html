@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Python does not have variables | Deep Python</title>
+  <title>Python has no variables | Deep Python</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="$(&quot;#ipynb&quot;).load( function() { console.log($(&quot;#ipynb&quot;).contents().find(&quot;body&quot;).find(&quot;#notebook&quot;)); document.getElementById(&#39;ipynb&#39;).height&#x3D;$(&quot;#ipynb&quot;).contents().find(&quot;#notebook&quot;).height()+100;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python does not have variables">
-<meta property="og:url" content="http://shivamms.github.io/2020/12/23/Python-does-not-have-variables/index.html">
+<meta property="og:title" content="Python has no variables">
+<meta property="og:url" content="http://shivamms.github.io/2020/12/23/Python-has-no-variables/index.html">
 <meta property="og:site_name" content="Deep Python">
 <meta property="og:description" content="$(&quot;#ipynb&quot;).load( function() { console.log($(&quot;#ipynb&quot;).contents().find(&quot;body&quot;).find(&quot;#notebook&quot;)); document.getElementById(&#39;ipynb&#39;).height&#x3D;$(&quot;#ipynb&quot;).contents().find(&quot;#notebook&quot;).height()+100;">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-12-23T18:51:41.000Z">
-<meta property="article:modified_time" content="2020-12-24T05:18:55.786Z">
+<meta property="article:modified_time" content="2020-12-24T19:00:23.515Z">
 <meta property="article:author" content="Subbu Maya">
 <meta name="twitter:card" content="summary">
   
@@ -77,9 +77,9 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-Python-does-not-have-variables" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-Python-has-no-variables" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/deeppython/2020/12/23/Python-does-not-have-variables/" class="article-date">
+    <a href="/deeppython/2020/12/23/Python-has-no-variables/" class="article-date">
   <time class="dt-published" datetime="2020-12-23T18:51:41.000Z" itemprop="datePublished">2020-12-23</time>
 </a>
     
@@ -91,7 +91,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Python does not have variables
+      Python has no variables
     </h1>
   
 
@@ -13177,12 +13177,28 @@ div#notebook {
   <div tabindex='-1' id='notebook' class='border-box-sizing'>
     <div class='container' id='notebook-container'>
 
+<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
+</div><div class='inner_cell'>
+<div class='text_cell_render border-box-sizing rendered_html'>
+<h2 id='Part-1'>Part 1</h2><h3 id='So-then-how-is-it-working?-What-happens-when-we-do-something-like-this---myvar-=-5?'>So then how is it working? What happens when we do something like this - myvar = 5?</h3><p>We, the programmers, grow up listening that the concept of variables is very important one. When asked by somebody that what is a variable and what happens when we create a variable, assign a value to a variable, reassign the value to a variable, delete a variable etc., we used to say this:</p>
+<p>On the line of code of creating and assigning values to variables like this</p>
+<p>myvar = 5</p>
+<p>the compiler reserves the memory based on the type of the variable and store the value in that memory location.
+In python, the definition of variables is very similar to definition variables in Algebra that value of a variable varies.</p>
+<p>Python does not handle the variable concept that the traditional compilers handle like reserving memory, issuing type specific instructions, replace the value in that reserved memory location when the variables are reassigned with differnt values etc.</p>
+<p>So better to use terminology like 'names' and 'objects' when refer to variables in Python. Here is why.Let us roughly make the similarity like names equivalent to variables and objects equivalent to values of the variables.</p>
+<p>Then, in run-time, everything is an object but object creation is not related to names. It means, we should not imply that an object is created and assigned to a name. It is not. Names know what object is assigned to them but objects do not necessarily know their assigned names.</p>
+<p>Since everything is object in Python, what happens when we type just a number as a line of code and send it to the Python interpreter? Let us see.</p>
+
+</div>
+</div>
+</div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
 <div class='prompt input_prompt'>In&nbsp;[1]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='nb'>type</span><span class='p'>([])</span>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='mi'>1</span>
 </pre></div>
 
     </div>
@@ -13201,7 +13217,48 @@ div#notebook {
 
 
 <div class='output_text output_subarea output_execute_result'>
-<pre>list</pre>
+<pre>1</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
+</div><div class='inner_cell'>
+<div class='text_cell_render border-box-sizing rendered_html'>
+<p>An object has been created here. This object has a single unique id which is a memory addrss in CPython. See the id below.</p>
+
+</div>
+</div>
+</div>
+<div class='cell border-box-sizing code_cell rendered'>
+<div class='input'>
+<div class='prompt input_prompt'>In&nbsp;[3]:</div>
+<div class='inner_cell'>
+    <div class='input_area'>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='nb'>id</span><span class='p'>(</span><span class='mi'>1</span><span class='p'>)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class='output_wrapper'>
+<div class='output'>
+
+
+<div class='output_area'>
+
+    <div class='prompt output_prompt'>Out[3]:</div>
+
+
+
+
+<div class='output_text output_subarea output_execute_result'>
+<pre>4413625472</pre>
 </div>
 
 </div>
@@ -13212,13 +13269,414 @@ div#notebook {
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[&nbsp;]:</div>
+<div class='prompt input_prompt'>In&nbsp;[5]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span> 
+<div class=' highlight hl-ipython3'><pre><span></span><span class='n'>a</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class='output_wrapper'>
+<div class='output'>
+
+
+<div class='output_area'>
+
+    <div class='prompt'></div>
+
+
+<div class='output_subarea output_text output_error'>
+<pre>
+<span class='ansi-red-fg'>---------------------------------------------------------------------------</span>
+<span class='ansi-red-fg'>NameError</span>                                 Traceback (most recent call last)
+<span class='ansi-green-fg'>&lt;ipython-input-5-3f786850e387&gt;</span> in <span class='ansi-cyan-fg'>&lt;module&gt;</span>
+<span class='ansi-green-fg'>----&gt; 1</span><span class='ansi-red-fg'> </span>a
+
+<span class='ansi-red-fg'>NameError</span>: name &#39;a&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
+</div><div class='inner_cell'>
+<div class='text_cell_render border-box-sizing rendered_html'>
+<p>Above, the interpretor assumes that a is a name and complains that it is not defined.</p>
+
+</div>
+</div>
+</div>
+<div class='cell border-box-sizing code_cell rendered'>
+<div class='input'>
+<div class='prompt input_prompt'>In&nbsp;[6]:</div>
+<div class='inner_cell'>
+    <div class='input_area'>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='n'>a</span> <span class='o'>=</span> <span class='mi'>1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
+</div><div class='inner_cell'>
+<div class='text_cell_render border-box-sizing rendered_html'>
+<p>Now name a is accepted since it is assigned to an object and so defined.</p>
+
+</div>
+</div>
+</div>
+<div class='cell border-box-sizing code_cell rendered'>
+<div class='input'>
+<div class='prompt input_prompt'>In&nbsp;[7]:</div>
+<div class='inner_cell'>
+    <div class='input_area'>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='s2'>&quot;a&quot;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class='output_wrapper'>
+<div class='output'>
+
+
+<div class='output_area'>
+
+    <div class='prompt output_prompt'>Out[7]:</div>
+
+
+
+
+<div class='output_text output_subarea output_execute_result'>
+<pre>&#39;a&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
+</div><div class='inner_cell'>
+<div class='text_cell_render border-box-sizing rendered_html'>
+<p>And above, there is no complaint because the literal 'a' is an object and is created, though it does not have to be assigned to any names. So names know what object is assigned to them but objects do not necessarily have to know their assigned names. More of id.</p>
+
+</div>
+</div>
+</div>
+<div class='cell border-box-sizing code_cell rendered'>
+<div class='input'>
+<div class='prompt input_prompt'>In&nbsp;[8]:</div>
+<div class='inner_cell'>
+    <div class='input_area'>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='nb'>id</span><span class='p'>(</span><span class='s2'>&quot;a&quot;</span><span class='p'>)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class='output_wrapper'>
+<div class='output'>
+
+
+<div class='output_area'>
+
+    <div class='prompt output_prompt'>Out[8]:</div>
+
+
+
+
+<div class='output_text output_subarea output_execute_result'>
+<pre>140423471131824</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
+</div><div class='inner_cell'>
+<div class='text_cell_render border-box-sizing rendered_html'>
+<p>Above is the unique id of the literal 'a' object.</p>
+<p>Objects have attributes. Let us see explore the objects.</p>
+
+</div>
+</div>
+</div>
+<div class='cell border-box-sizing code_cell rendered'>
+<div class='input'>
+<div class='prompt input_prompt'>In&nbsp;[9]:</div>
+<div class='inner_cell'>
+    <div class='input_area'>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='s2'>&quot;a&quot;</span><span class='o'>.</span><span class='n'>upper</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class='output_wrapper'>
+<div class='output'>
+
+
+<div class='output_area'>
+
+    <div class='prompt output_prompt'>Out[9]:</div>
+
+
+
+
+<div class='output_text output_subarea output_execute_result'>
+<pre>&lt;function str.upper()&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class='cell border-box-sizing code_cell rendered'>
+<div class='input'>
+<div class='prompt input_prompt'>In&nbsp;[10]:</div>
+<div class='inner_cell'>
+    <div class='input_area'>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='s2'>&quot;a&quot;</span><span class='o'>.</span><span class='n'>upper</span><span class='p'>()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class='output_wrapper'>
+<div class='output'>
+
+
+<div class='output_area'>
+
+    <div class='prompt output_prompt'>Out[10]:</div>
+
+
+
+
+<div class='output_text output_subarea output_execute_result'>
+<pre>&#39;A&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
+</div><div class='inner_cell'>
+<div class='text_cell_render border-box-sizing rendered_html'>
+<p>Now we got new string object returned. Can we get the all attributes of this object?</p>
+
+</div>
+</div>
+</div>
+<div class='cell border-box-sizing code_cell rendered'>
+<div class='input'>
+<div class='prompt input_prompt'>In&nbsp;[11]:</div>
+<div class='inner_cell'>
+    <div class='input_area'>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='nb'>dir</span><span class='p'>(</span><span class='s2'>&quot;A&quot;</span><span class='p'>)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class='output_wrapper'>
+<div class='output'>
+
+
+<div class='output_area'>
+
+    <div class='prompt output_prompt'>Out[11]:</div>
+
+
+
+
+<div class='output_text output_subarea output_execute_result'>
+<pre>[&#39;__add__&#39;,
+ &#39;__class__&#39;,
+ &#39;__contains__&#39;,
+ &#39;__delattr__&#39;,
+ &#39;__dir__&#39;,
+ &#39;__doc__&#39;,
+ &#39;__eq__&#39;,
+ &#39;__format__&#39;,
+ &#39;__ge__&#39;,
+ &#39;__getattribute__&#39;,
+ &#39;__getitem__&#39;,
+ &#39;__getnewargs__&#39;,
+ &#39;__gt__&#39;,
+ &#39;__hash__&#39;,
+ &#39;__init__&#39;,
+ &#39;__init_subclass__&#39;,
+ &#39;__iter__&#39;,
+ &#39;__le__&#39;,
+ &#39;__len__&#39;,
+ &#39;__lt__&#39;,
+ &#39;__mod__&#39;,
+ &#39;__mul__&#39;,
+ &#39;__ne__&#39;,
+ &#39;__new__&#39;,
+ &#39;__reduce__&#39;,
+ &#39;__reduce_ex__&#39;,
+ &#39;__repr__&#39;,
+ &#39;__rmod__&#39;,
+ &#39;__rmul__&#39;,
+ &#39;__setattr__&#39;,
+ &#39;__sizeof__&#39;,
+ &#39;__str__&#39;,
+ &#39;__subclasshook__&#39;,
+ &#39;capitalize&#39;,
+ &#39;casefold&#39;,
+ &#39;center&#39;,
+ &#39;count&#39;,
+ &#39;encode&#39;,
+ &#39;endswith&#39;,
+ &#39;expandtabs&#39;,
+ &#39;find&#39;,
+ &#39;format&#39;,
+ &#39;format_map&#39;,
+ &#39;index&#39;,
+ &#39;isalnum&#39;,
+ &#39;isalpha&#39;,
+ &#39;isascii&#39;,
+ &#39;isdecimal&#39;,
+ &#39;isdigit&#39;,
+ &#39;isidentifier&#39;,
+ &#39;islower&#39;,
+ &#39;isnumeric&#39;,
+ &#39;isprintable&#39;,
+ &#39;isspace&#39;,
+ &#39;istitle&#39;,
+ &#39;isupper&#39;,
+ &#39;join&#39;,
+ &#39;ljust&#39;,
+ &#39;lower&#39;,
+ &#39;lstrip&#39;,
+ &#39;maketrans&#39;,
+ &#39;partition&#39;,
+ &#39;replace&#39;,
+ &#39;rfind&#39;,
+ &#39;rindex&#39;,
+ &#39;rjust&#39;,
+ &#39;rpartition&#39;,
+ &#39;rsplit&#39;,
+ &#39;rstrip&#39;,
+ &#39;split&#39;,
+ &#39;splitlines&#39;,
+ &#39;startswith&#39;,
+ &#39;strip&#39;,
+ &#39;swapcase&#39;,
+ &#39;title&#39;,
+ &#39;translate&#39;,
+ &#39;upper&#39;,
+ &#39;zfill&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
+</div><div class='inner_cell'>
+<div class='text_cell_render border-box-sizing rendered_html'>
+<p>Every object has single type. We get the type by this.</p>
+
+</div>
+</div>
+</div>
+<div class='cell border-box-sizing code_cell rendered'>
+<div class='input'>
+<div class='prompt input_prompt'>In&nbsp;[12]:</div>
+<div class='inner_cell'>
+    <div class='input_area'>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='nb'>type</span><span class='p'>(</span><span class='s2'>&quot;A&quot;</span><span class='p'>)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class='output_wrapper'>
+<div class='output'>
+
+
+<div class='output_area'>
+
+    <div class='prompt output_prompt'>Out[12]:</div>
+
+
+
+
+<div class='output_text output_subarea output_execute_result'>
+<pre>str</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
+</div><div class='inner_cell'>
+<div class='text_cell_render border-box-sizing rendered_html'>
+<p>Since the type of an object is its class, we can get the type of the object this way too.</p>
+
+</div>
+</div>
+</div>
+<div class='cell border-box-sizing code_cell rendered'>
+<div class='input'>
+<div class='prompt input_prompt'>In&nbsp;[14]:</div>
+<div class='inner_cell'>
+    <div class='input_area'>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='s2'>&quot;A&quot;</span><span class='o'>.</span><span class='vm'>__class__</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class='output_wrapper'>
+<div class='output'>
+
+
+<div class='output_area'>
+
+    <div class='prompt output_prompt'>Out[14]:</div>
+
+
+
+
+<div class='output_text output_subarea output_execute_result'>
+<pre>str</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13248,7 +13706,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://shivamms.github.io/2020/12/23/Python-does-not-have-variables/" data-id="ckj1xv2pu00007b4t2ej04gqr" data-title="Python does not have variables" class="article-share-link">Share</a>
+      <a data-url="http://shivamms.github.io/2020/12/23/Python-has-no-variables/" data-id="ckj37riv40000814t9mxgbx66" data-title="Python has no variables" class="article-share-link">Share</a>
       
       
       
@@ -13256,20 +13714,6 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
   </div>
   
     
-<nav id="article-nav">
-  
-    <a href="/deeppython/2020/12/23/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Hello World
-        
-      </div>
-    </a>
-  
-  
-</nav>
-
   
 </article>
 
@@ -13303,11 +13747,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
       <ul>
         
           <li>
-            <a href="/deeppython/2020/12/23/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/deeppython/2020/12/23/Python-does-not-have-variables/">Python does not have variables</a>
+            <a href="/deeppython/2020/12/23/Python-has-no-variables/">Python has no variables</a>
           </li>
         
       </ul>
