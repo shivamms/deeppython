@@ -77,9 +77,9 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-Python-has-no-variables" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-Python-has-no-variables-Part-1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2020/12/23/Python-has-no-variables/" class="article-date">
+    <a href="/2020/12/23/Python-has-no-variables-Part-1/" class="article-date">
   <time class="dt-published" datetime="2020-12-23T18:51:41.000Z" itemprop="datePublished">2020-12-23</time>
 </a>
     
@@ -91,7 +91,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/12/23/Python-has-no-variables/">Python has no variables</a>
+      <a class="p-name article-title" href="/2020/12/23/Python-has-no-variables-Part-1/">Python has no variables Part 1</a>
     </h1>
   
 
@@ -101,11 +101,11 @@
       
         <script src="http://code.jquery.com/jquery-2.0.0.js"></script>
 
-<iframe id='ipynb'   marginheight="0" frameborder="0" width='924px' height='3350px' srcdoc="<!DOCTYPE html>
+<iframe id='ipynb'   marginheight="0" frameborder="0" width='924px' height='3400px' srcdoc="<!DOCTYPE html>
 <html>
 <head><meta charset='utf-8' />
 
-<title>PythonHasNoVariables</title>
+<title>PythonHasNoVariablesPart1</title>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
@@ -13180,15 +13180,15 @@ div#notebook {
 <div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
 </div><div class='inner_cell'>
 <div class='text_cell_render border-box-sizing rendered_html'>
-<h2 id='Part-1'>Part 1</h2><h3 id='So-then-how-is-it-working?-What-happens-when-we-do-something-like-this---myvar-=-5?'>So then how is it working? What happens when we do something like this - myvar = 5?</h3><p>We, the programmers, grow up listening that the concept of variables is very important one. When asked by somebody that what is a variable and what happens when we create a variable, assign a value to a variable, reassign the value to a variable, delete a variable etc., we used to say this:</p>
+<h3 id='So-then-how-is-it-working?-What-happens-when-we-do-something-like-this---myvar-=-5?'>So then how is it working? What happens when we do something like this - myvar = 5?</h3><p>We, the programmers, grow up listening that the concept of variables is very important one. When asked by somebody that what is a variable and what happens when we create a variable, assign a value to a variable, reassign the value to a variable, delete a variable etc., we used to say this:</p>
 <p>On the line of code of creating and assigning values to variables like this</p>
 <p>myvar = 5</p>
 <p>the compiler reserves the memory based on the type of the variable and store the value in that memory location.
 In python, the definition of variables is very similar to definition variables in Algebra that value of a variable varies.</p>
-<p>Python does not handle the variable concept that the traditional compilers handle like reserving memory, issuing type specific instructions, replace the value in that reserved memory location when the variables are reassigned with differnt values etc.</p>
-<p>So better to use terminology like 'names' and 'objects' when refer to variables in Python. Here is why.Let us roughly make the similarity like names equivalent to variables and objects equivalent to values of the variables.</p>
-<p>Then, in run-time, everything is an object but object creation is not related to names. It means, we should not imply that an object is created and assigned to a name. It is not. Names know what object is assigned to them but objects do not necessarily know their assigned names.</p>
-<p>Since everything is object in Python, what happens when we type just a number as a line of code and send it to the Python interpreter? Let us see.</p>
+<p>Python does not handle the concept of variable the way traditional compilers handle i.e. reserving memory, issuing type specific instructions, replace the value in that reserved memory location when the variables are reassigned with differnt values etc.</p>
+<p>So let us use better terminology 'names' and 'objects' when refer to variables and its values in Python. We can roughly compare names to variables and objects values of the variables.</p>
+<p>In run-time, everything is an object. We can create a object (value) without assigning it to any name (variable).
+What happens when we type just a number as a line of code and send it to the Python interpreter? Let us see.</p>
 
 </div>
 </div>
@@ -13229,7 +13229,8 @@ In python, the definition of variables is very similar to definition variables i
 <div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
 </div><div class='inner_cell'>
 <div class='text_cell_render border-box-sizing rendered_html'>
-<p>An object has been created here. This object has a single unique id which is a memory addrss in CPython. See the id below.</p>
+<p>Here above, we just created an object (value) but we did not assign it to any variable. This proves that object (value) creation is not related to name. Objects can be assigned to variables after its creation but objects do not necessarily have to know their assigned names. Of course, a name knows what object is assigned to it.</p>
+<p>Each object has a single unique id which is a memory addrss in CPython. See the id below.</p>
 
 </div>
 </div>
@@ -13706,7 +13707,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://deeppython.org/2020/12/23/Python-has-no-variables/" data-id="ckj37riv40000814t9mxgbx66" data-title="Python has no variables" class="article-share-link">Share</a>
+      <a data-url="http://deeppython.org/2020/12/23/Python-has-no-variables-Part-1/" data-id="ckj6ce8i90000qz4tergz44f0" data-title="Python has no variables Part 1" class="article-share-link">Share</a>
       
       
       
@@ -13749,7 +13750,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
       <ul>
         
           <li>
-            <a href="/2020/12/23/Python-has-no-variables/">Python has no variables</a>
+            <a href="/2020/12/23/Python-has-no-variables-Part-1/">Python has no variables Part 1</a>
           </li>
         
       </ul>
