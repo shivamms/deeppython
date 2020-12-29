@@ -2905,7 +2905,7 @@ body {
 }
 .aside {
   position: relative;
-  width: 300px;
+  width: 250px;
   height: 100%;
   background-color: #f9f9f9;
   background-color: var(--color-aside);
