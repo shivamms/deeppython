@@ -23,7 +23,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Python has no variables Part 1"/>
+        <meta property="og:title" content="Python has no variables Part 2"/>
     
 
     <!--Open Graph Description-->
@@ -55,7 +55,7 @@
 
     <!-- Title -->
     
-    <title>Python has no variables Part 1 - Deep Python</title>
+    <title>Python has no variables Part 2 - Deep Python</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -167,13 +167,13 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>Python has no variables Part 1</h1>
+                    <h1>Python has no variables Part 2</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
                         
                         
-                            2020-12-23
+                            2020-12-29
                         
                     </span>
                 </div>
@@ -201,7 +201,7 @@
 <html>
 <head><meta charset='utf-8' />
 
-<title>PythonHasNoVariablesPart1</title>
+<title>PythonHasNoVariablesPart2</title>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
@@ -13276,71 +13276,7 @@ div#notebook {
 <div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
 </div><div class='inner_cell'>
 <div class='text_cell_render border-box-sizing rendered_html'>
-<h3 id='So-then-how-is-it-working?-What-happens-when-we-do-something-like-this---myvar-=-5?'>So then how is it working? What happens when we do something like this - myvar = 5?</h3><p>We, the programmers, grew up learning that the concept of variables is very important one. When asked by somebody what is a variable and what happens when we create one, assign it a value, reassign the value, delete a variable etc., we used to say this:</p>
-<p>On the line of code of creating and assigning values to variables like this</p>
-<p>myvar = 5</p>
-<p>the compiler reserves the memory based on the type of the variable and store the value in that memory location. On reassigning, the value in that memory location is replaced with reassigned value and on deleting, memory is cleared and released to OS. This is pretty basic to every programmer.</p>
-<p>In python, it is a little different, the definition of variables is very similar to definition of variables in Algebra that is simply 'value of a variable varies'.</p>
-<p>Python interpreter does not implement the concept of variable the way traditional compilers handle i.e. reserving memory, issuing type specific instructions, replace the value in that reserved memory location when the variables are reassigned with differnt values etc.</p>
-<p>So let us use better terminology 'names' and 'objects' when refer to variables and its values in Python. We can roughly compare names to variables and objects values of the variables.</p>
-<p>In run-time, everything is an object. We can create an object (value) without assigning it to any name (variable).
-What happens when we type just a number as a line of code and send it to the Python interpreter? Let us see.</p>
-
-</div>
-</div>
-</div>
-<div class='cell border-box-sizing code_cell rendered'>
-<div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[1]:</div>
-<div class='inner_cell'>
-    <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='mi'>1</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class='output_wrapper'>
-<div class='output'>
-
-
-<div class='output_area'>
-
-    <div class='prompt output_prompt'>Out[1]:</div>
-
-
-
-
-<div class='output_text output_subarea output_execute_result'>
-<pre>1</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class='cell border-box-sizing code_cell rendered'>
-<div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[&nbsp;]:</div>
-<div class='inner_cell'>
-    <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
-</div><div class='inner_cell'>
-<div class='text_cell_render border-box-sizing rendered_html'>
-<p>Here above, we just created an object (value) but we did not assign it to any variable. This proves that object (value) creation is not related to name. Objects can be assigned to variables after they are created so objects do not necessarily have to know their assigned names. However, a name has to know what object is assigned to it.</p>
-<p>Each object has a single unique id which is a memory addrss in CPython. See the id below.</p>
-
+<h3 id='This-is-second-and-final-part-in-this-series:-Python-has-no-variables.'>This is second and final part in this series: Python has no variables.</h3><h5 id='Part-1:-https://deeppython.org/2020/12/23/Python-has-no-variables-Part-1/'>Part 1: </h5><h5 id='Continuing-from-Part-1,-let-us-further-explore-the-classes-of-different-data-structures-in-python.'>Continuing from Part 1, let us further explore the classes of different data structures in python.</h5>
 </div>
 </div>
 </div>
@@ -13349,7 +13285,7 @@ What happens when we type just a number as a line of code and send it to the Pyt
 <div class='prompt input_prompt'>In&nbsp;[3]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='nb'>id</span><span class='p'>(</span><span class='mi'>1</span><span class='p'>)</span>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='p'>[</span><span class='mi'>1</span><span class='p'>,</span><span class='mi'>2</span><span class='p'>]</span><span class='o'>.</span><span class='vm'>__class__</span>
 </pre></div>
 
     </div>
@@ -13368,7 +13304,40 @@ What happens when we type just a number as a line of code and send it to the Pyt
 
 
 <div class='output_text output_subarea output_execute_result'>
-<pre>4413625472</pre>
+<pre>list</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class='cell border-box-sizing code_cell rendered'>
+<div class='input'>
+<div class='prompt input_prompt'>In&nbsp;[4]:</div>
+<div class='inner_cell'>
+    <div class='input_area'>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='p'>{</span><span class='s2'>&quot;a&quot;</span><span class='p'>:</span> <span class='mi'>1</span><span class='p'>,</span> <span class='s2'>&quot;b&quot;</span><span class='p'>:</span> <span class='mi'>2</span><span class='p'>}</span><span class='o'>.</span><span class='vm'>__class__</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class='output_wrapper'>
+<div class='output'>
+
+
+<div class='output_area'>
+
+    <div class='prompt output_prompt'>Out[4]:</div>
+
+
+
+
+<div class='output_text output_subarea output_execute_result'>
+<pre>dict</pre>
 </div>
 
 </div>
@@ -13382,7 +13351,91 @@ What happens when we type just a number as a line of code and send it to the Pyt
 <div class='prompt input_prompt'>In&nbsp;[5]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='n'>a</span>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='mf'>5.668</span><span class='o'>.</span><span class='vm'>__class__</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class='output_wrapper'>
+<div class='output'>
+
+
+<div class='output_area'>
+
+    <div class='prompt output_prompt'>Out[5]:</div>
+
+
+
+
+<div class='output_text output_subarea output_execute_result'>
+<pre>float</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
+</div><div class='inner_cell'>
+<div class='text_cell_render border-box-sizing rendered_html'>
+<p>As we mentioned earlier, everthing in Python is object, the types float, dict, list etc are subclasses of object. Let us see this:</p>
+
+</div>
+</div>
+</div>
+<div class='cell border-box-sizing code_cell rendered'>
+<div class='input'>
+<div class='prompt input_prompt'>In&nbsp;[6]:</div>
+<div class='inner_cell'>
+    <div class='input_area'>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='kn'>import</span> <span class='nn'>inspect</span> <span class='c1'>#inspect module helps to get the heirarchy (method resoultion order) of the resolution of objects</span>
+<span class='n'>inspect</span><span class='o'>.</span><span class='n'>getmro</span><span class='p'>(</span><span class='nb'>type</span><span class='p'>(</span><span class='mf'>5.668</span><span class='p'>))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class='output_wrapper'>
+<div class='output'>
+
+
+<div class='output_area'>
+
+    <div class='prompt output_prompt'>Out[6]:</div>
+
+
+
+
+<div class='output_text output_subarea output_execute_result'>
+<pre>(float, object)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
+</div><div class='inner_cell'>
+<div class='text_cell_render border-box-sizing rendered_html'>
+<p>Above, we could see that float type is subclass of object class. Other way to see this is to find on what class the subclass type float is based and what order they are resolved.</p>
+
+</div>
+</div>
+</div>
+<div class='cell border-box-sizing code_cell rendered'>
+<div class='input'>
+<div class='prompt input_prompt'>In&nbsp;[11]:</div>
+<div class='inner_cell'>
+    <div class='input_area'>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='nb'>print</span><span class='p'>(</span><span class='mf'>5.668</span><span class='o'>.</span><span class='vm'>__class__</span><span class='o'>.</span><span class='vm'>__bases__</span><span class='p'>)</span>
+<span class='nb'>print</span><span class='p'>(</span><span class='mf'>5.668</span><span class='o'>.</span><span class='vm'>__class__</span><span class='o'>.</span><span class='vm'>__mro__</span><span class='p'>)</span>
 </pre></div>
 
     </div>
@@ -13398,14 +13451,10 @@ What happens when we type just a number as a line of code and send it to the Pyt
     <div class='prompt'></div>
 
 
-<div class='output_subarea output_text output_error'>
-<pre>
-<span class='ansi-red-fg'>---------------------------------------------------------------------------</span>
-<span class='ansi-red-fg'>NameError</span>                                 Traceback (most recent call last)
-<span class='ansi-green-fg'>&lt;ipython-input-5-3f786850e387&gt;</span> in <span class='ansi-cyan-fg'>&lt;module&gt;</span>
-<span class='ansi-green-fg'>----&gt; 1</span><span class='ansi-red-fg'> </span>a
-
-<span class='ansi-red-fg'>NameError</span>: name &#39;a&#39; is not defined</pre>
+<div class='output_subarea output_stream output_stdout output_text'>
+<pre>(&lt;class &#39;object&#39;&gt;,)
+(&lt;class &#39;float&#39;&gt;, &lt;class &#39;object&#39;&gt;)
+</pre>
 </div>
 </div>
 
@@ -13416,38 +13465,20 @@ What happens when we type just a number as a line of code and send it to the Pyt
 <div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
 </div><div class='inner_cell'>
 <div class='text_cell_render border-box-sizing rendered_html'>
-<p>Above, the interpretor assumes that a is a name and complains that it is not defined.</p>
+<p>Here is another interesting one. The bool type. We know it represents True or False, it is based on type int and int is based on object. Let us see that:</p>
 
 </div>
 </div>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[6]:</div>
+<div class='prompt input_prompt'>In&nbsp;[18]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='n'>a</span> <span class='o'>=</span> <span class='mi'>1</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
-</div><div class='inner_cell'>
-<div class='text_cell_render border-box-sizing rendered_html'>
-<p>Now name a is accepted since it is assigned to an object and so defined.</p>
-
-</div>
-</div>
-</div>
-<div class='cell border-box-sizing code_cell rendered'>
-<div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[7]:</div>
-<div class='inner_cell'>
-    <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='s2'>&quot;a&quot;</span>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='nb'>print</span><span class='p'>(</span><span class='mi'>1</span><span class='o'>==</span><span class='mi'>1</span><span class='p'>)</span>
+<span class='nb'>print</span><span class='p'>((</span><span class='mi'>1</span><span class='o'>==</span><span class='mi'>1</span><span class='p'>)</span><span class='o'>.</span><span class='vm'>__class__</span><span class='p'>)</span>
+<span class='nb'>print</span><span class='p'>((</span><span class='mi'>1</span><span class='o'>==</span><span class='mi'>1</span><span class='p'>)</span><span class='o'>.</span><span class='vm'>__class__</span><span class='o'>.</span><span class='vm'>__bases__</span><span class='p'>)</span>
+<span class='nb'>print</span><span class='p'>((</span><span class='mi'>1</span><span class='o'>==</span><span class='mi'>1</span><span class='p'>)</span><span class='o'>.</span><span class='vm'>__class__</span><span class='o'>.</span><span class='vm'>__bases__</span><span class='p'>[</span><span class='mi'>0</span><span class='p'>]</span><span class='o'>.</span><span class='vm'>__bases__</span><span class='p'>)</span>
 </pre></div>
 
     </div>
@@ -13460,15 +13491,16 @@ What happens when we type just a number as a line of code and send it to the Pyt
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[7]:</div>
+    <div class='prompt'></div>
 
 
-
-
-<div class='output_text output_subarea output_execute_result'>
-<pre>&#39;a&#39;</pre>
+<div class='output_subarea output_stream output_stdout output_text'>
+<pre>True
+&lt;class &#39;bool&#39;&gt;
+(&lt;class &#39;int&#39;&gt;,)
+(&lt;class &#39;object&#39;&gt;,)
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -13478,17 +13510,19 @@ What happens when we type just a number as a line of code and send it to the Pyt
 <div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
 </div><div class='inner_cell'>
 <div class='text_cell_render border-box-sizing rendered_html'>
-<p>And above, there is no complaint because the literal 'a' is an object and is created, though it does not have to be assigned to any names. So names know what object is assigned to them but objects do not necessarily have to know their assigned names. More of id.</p>
+<p>True, False, bool are names that are created by python.</p>
 
 </div>
 </div>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[8]:</div>
+<div class='prompt input_prompt'>In&nbsp;[25]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='nb'>id</span><span class='p'>(</span><span class='s2'>&quot;a&quot;</span><span class='p'>)</span>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='nb'>print</span><span class='p'>(</span><span class='kc'>True</span><span class='o'>.</span><span class='vm'>__class__</span><span class='p'>)</span>
+<span class='nb'>print</span><span class='p'>(</span><span class='kc'>True</span><span class='o'>.</span><span class='vm'>__class__</span><span class='o'>.</span><span class='vm'>__bases__</span><span class='p'>)</span>
+<span class='nb'>print</span><span class='p'>(</span><span class='kc'>True</span><span class='o'>.</span><span class='vm'>__class__</span><span class='o'>.</span><span class='vm'>__bases__</span><span class='p'>[</span><span class='mi'>0</span><span class='p'>]</span><span class='o'>.</span><span class='vm'>__bases__</span><span class='p'>)</span>
 </pre></div>
 
     </div>
@@ -13501,15 +13535,15 @@ What happens when we type just a number as a line of code and send it to the Pyt
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[8]:</div>
+    <div class='prompt'></div>
 
 
-
-
-<div class='output_text output_subarea output_execute_result'>
-<pre>140423471131824</pre>
+<div class='output_subarea output_stream output_stdout output_text'>
+<pre>&lt;class &#39;bool&#39;&gt;
+(&lt;class &#39;int&#39;&gt;,)
+(&lt;class &#39;object&#39;&gt;,)
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -13519,18 +13553,20 @@ What happens when we type just a number as a line of code and send it to the Pyt
 <div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
 </div><div class='inner_cell'>
 <div class='text_cell_render border-box-sizing rendered_html'>
-<p>Above is the unique id of the literal 'a' object.</p>
-<p>Objects have attributes. Let us see explore the objects.</p>
+<p>More on this:</p>
 
 </div>
 </div>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[9]:</div>
+<div class='prompt input_prompt'>In&nbsp;[30]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='s2'>&quot;a&quot;</span><span class='o'>.</span><span class='n'>upper</span>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='nb'>print</span><span class='p'>(</span><span class='kc'>True</span><span class='o'>.</span><span class='vm'>__class__</span> <span class='o'>==</span> <span class='p'>(</span><span class='mi'>1</span><span class='o'>==</span><span class='mi'>1</span><span class='p'>)</span><span class='o'>.</span><span class='vm'>__class__</span><span class='p'>)</span>
+<span class='nb'>print</span><span class='p'>(</span><span class='kc'>True</span><span class='o'>.</span><span class='vm'>__class__</span> <span class='ow'>is</span> <span class='p'>(</span><span class='mi'>1</span><span class='o'>==</span><span class='mi'>1</span><span class='p'>)</span><span class='o'>.</span><span class='vm'>__class__</span><span class='p'>)</span>
+<span class='c1'>## the ids are same</span>
+<span class='nb'>print</span><span class='p'>(</span><span class='nb'>id</span><span class='p'>(</span><span class='kc'>True</span><span class='o'>.</span><span class='vm'>__class__</span><span class='p'>),</span> <span class='nb'>id</span><span class='p'>((</span><span class='mi'>1</span><span class='o'>==</span><span class='mi'>1</span><span class='p'>)</span><span class='o'>.</span><span class='vm'>__class__</span><span class='p'>))</span>
 </pre></div>
 
     </div>
@@ -13543,27 +13579,37 @@ What happens when we type just a number as a line of code and send it to the Pyt
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[9]:</div>
+    <div class='prompt'></div>
 
 
-
-
-<div class='output_text output_subarea output_execute_result'>
-<pre>&lt;function str.upper()&gt;</pre>
-</div>
-
-</div>
-
+<div class='output_subarea output_stream output_stdout output_text'>
+<pre>True
+True
+4500258304 4500258304
+</pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
+</div><div class='inner_cell'>
+<div class='text_cell_render border-box-sizing rendered_html'>
+<p>What about built-in functions? class? type? object?</p>
+
+</div>
+</div>
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[10]:</div>
+<div class='prompt input_prompt'>In&nbsp;[34]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='s2'>&quot;a&quot;</span><span class='o'>.</span><span class='n'>upper</span><span class='p'>()</span>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='nb'>print</span><span class='p'>(</span><span class='nb'>len</span><span class='p'>)</span>
+<span class='nb'>print</span><span class='p'>(</span><span class='nb'>len</span><span class='o'>.</span><span class='vm'>__class__</span><span class='p'>)</span>
+<span class='nb'>print</span><span class='p'>(</span><span class='nb'>len</span><span class='o'>.</span><span class='vm'>__class__</span><span class='o'>.</span><span class='vm'>__mro__</span><span class='p'>)</span>
 </pre></div>
 
     </div>
@@ -13576,133 +13622,15 @@ What happens when we type just a number as a line of code and send it to the Pyt
 
 <div class='output_area'>
 
-    <div class='prompt output_prompt'>Out[10]:</div>
+    <div class='prompt'></div>
 
 
-
-
-<div class='output_text output_subarea output_execute_result'>
-<pre>&#39;A&#39;</pre>
+<div class='output_subarea output_stream output_stdout output_text'>
+<pre>&lt;built-in function len&gt;
+&lt;class &#39;builtin_function_or_method&#39;&gt;
+(&lt;class &#39;builtin_function_or_method&#39;&gt;, &lt;class &#39;object&#39;&gt;)
+</pre>
 </div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
-</div><div class='inner_cell'>
-<div class='text_cell_render border-box-sizing rendered_html'>
-<p>Now we got new string object returned. Can we get the all attributes of this object?</p>
-
-</div>
-</div>
-</div>
-<div class='cell border-box-sizing code_cell rendered'>
-<div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[11]:</div>
-<div class='inner_cell'>
-    <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='nb'>dir</span><span class='p'>(</span><span class='s2'>&quot;A&quot;</span><span class='p'>)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class='output_wrapper'>
-<div class='output'>
-
-
-<div class='output_area'>
-
-    <div class='prompt output_prompt'>Out[11]:</div>
-
-
-
-
-<div class='output_text output_subarea output_execute_result'>
-<pre>[&#39;__add__&#39;,
- &#39;__class__&#39;,
- &#39;__contains__&#39;,
- &#39;__delattr__&#39;,
- &#39;__dir__&#39;,
- &#39;__doc__&#39;,
- &#39;__eq__&#39;,
- &#39;__format__&#39;,
- &#39;__ge__&#39;,
- &#39;__getattribute__&#39;,
- &#39;__getitem__&#39;,
- &#39;__getnewargs__&#39;,
- &#39;__gt__&#39;,
- &#39;__hash__&#39;,
- &#39;__init__&#39;,
- &#39;__init_subclass__&#39;,
- &#39;__iter__&#39;,
- &#39;__le__&#39;,
- &#39;__len__&#39;,
- &#39;__lt__&#39;,
- &#39;__mod__&#39;,
- &#39;__mul__&#39;,
- &#39;__ne__&#39;,
- &#39;__new__&#39;,
- &#39;__reduce__&#39;,
- &#39;__reduce_ex__&#39;,
- &#39;__repr__&#39;,
- &#39;__rmod__&#39;,
- &#39;__rmul__&#39;,
- &#39;__setattr__&#39;,
- &#39;__sizeof__&#39;,
- &#39;__str__&#39;,
- &#39;__subclasshook__&#39;,
- &#39;capitalize&#39;,
- &#39;casefold&#39;,
- &#39;center&#39;,
- &#39;count&#39;,
- &#39;encode&#39;,
- &#39;endswith&#39;,
- &#39;expandtabs&#39;,
- &#39;find&#39;,
- &#39;format&#39;,
- &#39;format_map&#39;,
- &#39;index&#39;,
- &#39;isalnum&#39;,
- &#39;isalpha&#39;,
- &#39;isascii&#39;,
- &#39;isdecimal&#39;,
- &#39;isdigit&#39;,
- &#39;isidentifier&#39;,
- &#39;islower&#39;,
- &#39;isnumeric&#39;,
- &#39;isprintable&#39;,
- &#39;isspace&#39;,
- &#39;istitle&#39;,
- &#39;isupper&#39;,
- &#39;join&#39;,
- &#39;ljust&#39;,
- &#39;lower&#39;,
- &#39;lstrip&#39;,
- &#39;maketrans&#39;,
- &#39;partition&#39;,
- &#39;replace&#39;,
- &#39;rfind&#39;,
- &#39;rindex&#39;,
- &#39;rjust&#39;,
- &#39;rpartition&#39;,
- &#39;rsplit&#39;,
- &#39;rstrip&#39;,
- &#39;split&#39;,
- &#39;splitlines&#39;,
- &#39;startswith&#39;,
- &#39;strip&#39;,
- &#39;swapcase&#39;,
- &#39;title&#39;,
- &#39;translate&#39;,
- &#39;upper&#39;,
- &#39;zfill&#39;]</pre>
-</div>
-
 </div>
 
 </div>
@@ -13712,88 +13640,11 @@ What happens when we type just a number as a line of code and send it to the Pyt
 <div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
 </div><div class='inner_cell'>
 <div class='text_cell_render border-box-sizing rendered_html'>
-<p>Every object has single type. We get the type by this.</p>
-
-</div>
-</div>
-</div>
-<div class='cell border-box-sizing code_cell rendered'>
-<div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[12]:</div>
-<div class='inner_cell'>
-    <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='nb'>type</span><span class='p'>(</span><span class='s2'>&quot;A&quot;</span><span class='p'>)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class='output_wrapper'>
-<div class='output'>
-
-
-<div class='output_area'>
-
-    <div class='prompt output_prompt'>Out[12]:</div>
-
-
-
-
-<div class='output_text output_subarea output_execute_result'>
-<pre>str</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
-</div><div class='inner_cell'>
-<div class='text_cell_render border-box-sizing rendered_html'>
-<p>Since the type of an object is its class, we can get the type of the object this way too.</p>
-
-</div>
-</div>
-</div>
-<div class='cell border-box-sizing code_cell rendered'>
-<div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[14]:</div>
-<div class='inner_cell'>
-    <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='s2'>&quot;A&quot;</span><span class='o'>.</span><span class='vm'>__class__</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class='output_wrapper'>
-<div class='output'>
-
-
-<div class='output_area'>
-
-    <div class='prompt output_prompt'>Out[14]:</div>
-
-
-
-
-<div class='output_text output_subarea output_execute_result'>
-<pre>str</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
-</div><div class='inner_cell'>
-<div class='text_cell_render border-box-sizing rendered_html'>
+<p>Built-in functions are objects too and thay have their class as 'builtin_function_or_method' which is subclass of 'object'.</p>
+<p>Recap: 
+Everthing is object.
+Every object has value, type, base classes, unique id, and attributes.
+We can create more objects by calling other callable objects.</p>
 <p>Reference: Stuart Williams - Python Epiphanies - PyCon 2018 </p>
 
 </div>
