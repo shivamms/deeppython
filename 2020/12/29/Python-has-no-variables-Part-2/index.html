@@ -13666,14 +13666,10 @@ We can create more objects by calling other callable objects.</p>
 $("#ipynb").load( function() {
 console.log($("#ipynb").contents().find("body").find("#notebook"));
 document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook").height()+100;
+document.getElementById('ipynb').height=$("#ipynb").contentWindow.document.body.scrollHeight + 'px';
 })
 </script> 
-<script>
-  var myframe = document.getElementById("npynb");
-  myframe.onload = function(){
-    myframe.style.height = myframe.contentWindow.document.body.scrollHeight + 'px';
-  }
-</script>
+
     
 
 
