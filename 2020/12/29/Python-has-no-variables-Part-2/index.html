@@ -13668,6 +13668,12 @@ console.log($("#ipynb").contents().find("body").find("#notebook"));
 document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook").height()+100;
 })
 </script> 
+<script>
+  var myframe = document.getElementById("npynb");
+  myframe.onload = function(){
+    myframe.style.height = myframe.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
     
 
 
