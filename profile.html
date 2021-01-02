@@ -1,0 +1,63 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <meta name="description" content="All about meta tags and how to add them to your website.">
+            <meta name="keywords" content="meta tags, meta description, meta keywords, SEO, search engine optimization">
+            <meta name="description" content="All about meta tags and how to add them to your website.">
+            <meta name="keywords" content="meta tags, meta description, meta keywords, SEO, search engine optimization">
+            <title>Deep Python</title>
+            <link rel="stylesheet" href="css/style.css" type="text/css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Solway:wght@800&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <div class="wrapper">
+                <header class="header">
+                    <h1> Coffee with Python </h1>
+                    <img src="img/cup2.png" width=5%>
+                    <nav>
+                        <ul>
+                            <li><span class="home"> <a href="index.html">Home</a></span></li>
+                            <li><span class="about"> <a href="about.html">About</a></span></li>
+                            <li><span class="archives"> <a href="archives.html">Archives</a></span></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="container">
+                    <div style="--aspect-ratio: 16/9;">
+                        <iframe id='ipynb'  allowtransparency="true "style="background: #c7c7c7;" marginheight="0" frameborder="0" width='1100px' height='3450px' src="notebooks/PythonHasNoVariablesPart1.html" style="scrolling:no;">
+                        </iframe>
+                    </div>
+                    <div class="profile">
+                        <img src="img/avatar.jpg"><br>
+                        <p> Subramanian Mayakkaruppan </p>
+                        <p> Subramanian Mayakkaruppan </p>
+                    </div>
+                </div>
+                <footer>
+                    <div id="disqus_thread"></div>
+                    <div class="container">
+                    <script>
+                        var disqus_config = function () {
+                        this.page.url = 'https://deeppython.org';  
+                        this.page.identifier = 'deeppythonsubbu'; 
+                        this.page.title = 'Deep Python';
+                        };
+                        
+                        (function() { 
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://www-deeppython-org.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                    </div>
+                    <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                </footer>
+            </div>
+        </body>
+    </html>
+    
