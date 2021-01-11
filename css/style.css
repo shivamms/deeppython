@@ -277,6 +277,7 @@ display: inline-flex;
   margin-top: 0%;
   margin-bottom: 0%;
   float: left;
+  position: relative;
 }
 
 [style*="--aspect-ratio"]  {
