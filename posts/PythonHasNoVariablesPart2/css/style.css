@@ -1,0 +1,306 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
+  background: linear-gradient(-225deg, #b41d1d 0%, #e7325a 29%, #1c02af 67%, #2c2b17 100%);
+
+}
+
+#page-wrap { width: 600px; margin: 15px auto; }
+
+#sidebar1 { 
+  width: 25%; 
+  height: 100%;
+  float: right; 
+  padding-top: 10px;
+  margin-right: 3%;
+  margin-top: 3%;
+  border-radius: 10%;
+  overflow: auto;
+}
+
+#sidebar1 img {
+  mix-blend-mode: normal;
+  border-radius: 50%;
+  align-self: center;
+  margin-left: 85px;
+}
+
+#sidebar1 #profile a{
+  text-align: center;
+  font-size: 20px;
+  margin-left: 29px;
+  color: white;
+}
+
+.posts {
+  margin: -1;
+}
+
+#sidebar1 ul {
+  list-style: none;
+}
+
+#sidebar1  a {
+  text-decoration: none;
+  padding: 1em;
+  margin: 1em;
+}
+
+#sidebar1 a:link {
+  color: #f7dbb7;
+}
+
+#sidebar1 a:visited {
+  color:#FFFFFF;
+  text-decoration: none;
+}
+
+#sidebar1 a:hover {
+  color:#000000;
+  text-shadow: 1px 1px 3px rgb(255, 255, 255);
+}
+
+.socialmedia {
+  text-align: center;
+  font-size: 20px;
+  margin-left: 29px;
+  color: white;
+}
+
+.fa {
+  font-size: 40px;
+  overflow: auto;
+  align-items: center;
+  text-decoration: none;
+  display: inline-block;
+  text-rendering: auto;
+  margin-left: auto;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Twitter */
+.fa-twitter {
+  color: white;
+}
+
+.fa-linkedin {
+  color: white;
+}
+
+.fa-github {
+  color: white;
+}
+
+#sidebar1 p {
+  color: #f7b663;
+  margin-left: 10px;
+}
+
+.header {
+  color:#FFFFFF;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.pageicon{
+  margin: 20px;
+  mix-blend-mode: color-burn;
+  align-self: center;
+  padding-bottom: 2%;
+}
+
+.header h1 {
+  color:#FFFFFF;
+  text-align: left;
+  font-family: "Lato";
+  font-size: 40px;
+  text-shadow: 1px 1px 3px rgb(122, 43, 43);
+  padding-left: 0.75em;
+}
+
+.header ul {
+color:#FFFFFF;
+text-align: center;
+list-style: none;
+display: inline-flex;
+}
+
+.header a {
+    text-decoration: none;
+    padding: 1em;
+    margin: 1em;
+}
+
+.header a:link {
+    color:#FFFFFF;
+}
+
+.header a:visited {
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+.header a:hover {
+    color:#000000;
+    text-shadow: 1px 1px 3px rgb(255, 255, 255);
+}
+
+.postpath {
+  margin-top: 0%;
+  display: inline-flex;
+  margin: -1
+}
+
+.postpath ul {
+  color:#FFFFFF;
+  text-align: center;
+  list-style: none;
+  display: inline-flex;
+  margin: -1;
+  }
+
+.postpath a {
+    text-decoration: none;
+    color:#f7b663;
+}
+
+.postpath a:link {
+    color:#f7b663;
+    font-size: 20;
+}
+
+.postpath a:visited {
+    color: #f7b663;
+    text-decoration: none;
+}
+
+.postpath a:hover {
+    color:#000000;
+    text-shadow: 1px 1px 3px rgb(255, 255, 255);
+}
+
+.postheader {
+  color:#FFFFFF;
+  display: flex;
+  align-items: center;
+  margin: -1;
+  justify-content: flex-start;
+  border-collapse: separate; 
+ }
+
+.postheader h1 {
+  color:#f7cd96;
+  text-align: left;
+  font-family: "Lato";
+  font-size: 50px;
+  text-shadow: 1px 1px 3px rgb(122, 43, 43);
+  padding-left: 0.55em;
+  padding-bottom: 0%;
+  margin: 5
+}
+
+.postheader img {
+  padding-left: 11.75%;
+  overflow: hidden;
+}
+
+.summary {
+  color:#f7cd96;
+  text-align: left;
+  font-family: "Lato";
+  font-size: 20px;
+  text-shadow: 1px 1px 3px rgb(122, 43, 43);
+  padding-left: 1em;
+  padding-bottom: 0%;
+  margin: 15
+}
+
+
+.home {
+color:#FFFFFF;
+list-style: none;
+margin: 5 1 3px 0;
+}
+
+.about {
+color:#FFFFFF;
+list-style: none;
+margin: 0 0 3px 0;
+}
+
+.archives {
+color:#FFFFFF;
+list-style: none;
+margin: 0 0 3px 0;
+}
+
+.posthead{
+    background-color: #aaa4a4;  
+    width: 69.5%;
+    height: 2em;
+    margin-left: 2em;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.bloghead a {
+    color:#000000
+}
+
+.postdesc{
+    background-color: #ebd9d9;  
+    width: 69.5%;
+    height: 3em;
+    margin-left: 2em;
+    text-align: left;
+}
+
+#ipynb {
+  overflow: -moz-hidden-unscrollable;
+}
+
+[style*="--aspect-ratio"]  {
+  width: 70%;
+  float: left;
+  border-radius: 15px;
+  width: 1000px; 
+  overflow: hidden;
+  margin-left: 2em;
+}
+
+[style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+  float: center;
+}
+
+[style*="--aspect-ratio"] > img {  
+  height: auto;
+} 
+
+footer {
+margin-left: 2em;
+width: 70%;
+float: left;
+padding-top: 1em;
+padding-bottom: 1em;
+}
+
+footer > :first-child {
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+
+
+  
