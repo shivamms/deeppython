@@ -1,0 +1,18 @@
+{
+  "name": "Blog Name",
+  "title": "Blog Title",
+  "author": "Author Name",
+  "profile_pic": "../img/avatar.jpg",
+  "linkedIn_profile": "linkedIn Profile",
+  "github_profile": "GitHub Profile",
+  "twitter_profile": "Twitter Profile",
+   "navigation": [{"name": "menu name", "caption": "menu caption"},
+                  {"name": "menu name", "caption": "menu caption"}],
+  "posts": [
+    {"name": "Post Name1"},
+    {"name": "Post Name2"}
+  ],
+  "default_post": "Post Name1",
+  "icon": "../img/cup2.png",
+  "header": "Blog Header"
+}

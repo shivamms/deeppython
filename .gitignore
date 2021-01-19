@@ -1,6 +1,5 @@
 .DS_Store
 .idea
-config/**
-index.html.template
-tools/
-templates/
+index.html
+posts/
+notebooks/

@@ -1,0 +1,21 @@
+{
+  "name": "Deep Python",
+  "title": "Deep Python",
+  "author": "Subramanian Mayakkaruppan",
+  "profile_pic": "../img/avatar.jpg",
+  "linkedIn_profile": "https://www.linkedin.com/in/subramanianmayakkaruppan/",
+  "github_profile": "https://github.com/shivamms",
+  "twitter_profile": "https://twitter.com/shivamms",
+  "navigation": [{"name": "Home", "caption": "Home"},
+                  {"name": "Blogs", "caption": "Blogs"}],
+  "posts": [
+    {"name": "Python Has No Variables Part 1"},
+    {"name": "Python Has No Variables Part 2"},
+    {"name": "Everything Is Object In Python"},
+    {"name": "Names In Python Part 1"},
+    {"name": "Meta Programming Part 1"}
+  ],
+  "default_post": "Python Has No Variables Part 1",
+  "icon": "../img/cup2.png",
+  "header": "Coffee with Python"
+}
