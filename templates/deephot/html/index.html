@@ -5,7 +5,7 @@
         <meta name="description" content="{{post.description}}">
         <meta name="keywords" content="{{post.keywords}}">
         <title>{{blog.title}}</title>
-        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Solway:wght@800&display=swap" rel="stylesheet">
@@ -18,20 +18,20 @@
     <body>
         <div id="sidebar1">
             <div id="profile">
-                <img src="img/avatar.jpg">
+                <img src="{{blog.profile_pic}}">
                 <a href="#"></a><br>
-                <a href="about.html">Subramanian Mayakkaruppan</a>
+                <a href="about.html">{{blog.author}}</a>
             </div>
             <div class="socialmedia">
-                <a href="https://www.linkedin.com/in/subramanianmayakkaruppan/" class="fa fa-linkedin"></a>
-                <a href="https://github.com/shivamms" class="fa fa-github"></a>
-                <a href="https://twitter.com/shivamms" class="fa fa-twitter"></a>
+                <a href="{{blog.linkedIn_profile}}" class="fa fa-linkedin"></a>
+                <a href="{{blog.github_profile}}" class="fa fa-github"></a>
+                <a href="{{blog.twitter_profile}}" class="fa fa-twitter"></a>
             </div>
             <div class="posts">
                 <ul>
                     <p>Posts</p>
                     {% for item in posts %}
-                        <li><a href="{{ item.href }}">{{ item.caption }}</a></li><br>
+                        <li><a href="{{ item.post_html_relative }}">{{ item.name }}</a></li><br>
                     {% endfor %}
                 </ul>
             </div>
@@ -52,8 +52,8 @@
             <div class="postpath">
                 <nav>
                     <ul>
-                        <li><span class="home"> <a href="index.html">Home \</a></span></li>
-                        <li><span class="posts"> <a href="index.html">Posts </a></span></li>
+                        <li><span class="home"> <a href="../../../index.html">Home \</a></span></li>
+                        <li><span class="posts"> <a href="../../../index.html">Posts </a></span></li>
                     </ul>
                 </nav>
             </div>
@@ -61,12 +61,12 @@
                 <h1> {{ post.title }} </h1>
             </div>
             <div class="summary">
-                <p> Discussion on how Python handles variables and values differently! </p>
+                <p> {{ post.summary }} </p>
             </div>
             <div class="container">
                 <div style="--aspect-ratio: 16/9;">
-                    <iframe id='ipynb'  allowtransparency="true "style="background: #c7c7c7;" marginheight="0" frameborder="0" width='1100px' height='3325px' position: absolute; 
-                        src="{{ post.contentFile}}" style="scrolling:no;">
+                    <iframe id='ipynb'  allowtransparency="true "style="background: #c7c7c7;" marginheight="0" frameborder="0" width='1100px' height='{{post.content_height}}' position: absolute;
+                        src="{{ post.contentFile_relative}}" style="scrolling:no;">
                     </iframe>
                 </div>
             </div>
