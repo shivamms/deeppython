@@ -1,0 +1,10 @@
+{
+      "name": "Post Name1",
+      "title": "Post Title",
+      "caption": "Post Caption",
+      "description": "Post Description",
+      "summary": "Post Summary",
+      "keywords": "Post Keywords",
+      "contentFolder": "notebooks",
+      "content_height" : "content_height in 1234px format"
+}
